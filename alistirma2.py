@@ -1,11 +1,10 @@
-toplam = 1
-n = 1
-while n > 1:
-   n = n+1
-   toplam = toplam + (1/(n^2))
+i=10000
+toplam = 0
 
-import math
- 
-print("pi ~", math.sqrt(6*toplam))
-    
-    
+for n in range(1,i):
+   toplam = toplam + (1 / n ** 2)
+
+from math import sqrt
+
+pi = sqrt(6 * toplam)
+print('pi ~ ',pi )
